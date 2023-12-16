@@ -19,6 +19,18 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
 
+   <div class="container">
+        <div class="row">
+            <div class="alert alert-warning d-flex align-items-center" role="alert">
+                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Warning:">
+                    <use xlink:href="#exclamation-triangle-fill" /></svg>
+                <div>
+                  KitBase under development
+                </div>
+            </div>
+        </div>
+   </div>
+
     <!-- Sidebar Start -->
     <button class="btn btn-lg btn-primary btn-offcanvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidebar" aria-controls="offcanvasSidebar">
         <i class="fa fa-bars"></i>
@@ -33,48 +45,65 @@
         <div class="offcanvas-body">
             <div class="flex-shrink-0 bg-white">
                 <ul class="list-unstyled ps-0">
+
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#kit-install" aria-expanded="true">
+                            Install
+                        </button>
+                        <div class="collapse show" id="kit-install">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#kit-install" class="text-body rounded">KitBase setup</a></li>
+                                <!-- <li><a href="#section-1-2" class="text-body rounded">Section Iten 1.2</a></li>
+                                <li><a href="#section-1-3" class="text-body rounded">Section Iten 1.3</a></li>
+                                <li><a href="#section-1-4" class="text-body rounded">Section Iten 1.4</a></li>
+                                <li><a href="#section-1-5" class="text-body rounded">Section Iten 1.5</a></li> -->
+                            </ul>
+                        </div>
+                    </li>
+
                     <li class="mb-1">
                         <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
                             data-bs-target="#home-collapse" aria-expanded="true">
-                            Section Iten 1
+                            Button
                         </button>
                         <div class="collapse show" id="home-collapse">
                             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                <li><a href="#section-1-1" class="text-body rounded">Section Iten 1.1</a></li>
-                                <li><a href="#section-1-2" class="text-body rounded">Section Iten 1.2</a></li>
+                                <li><a href="#section-1-1" class="text-body rounded">Button Builder</a></li>
+                                <!-- <li><a href="#section-1-2" class="text-body rounded">Section Iten 1.2</a></li>
                                 <li><a href="#section-1-3" class="text-body rounded">Section Iten 1.3</a></li>
                                 <li><a href="#section-1-4" class="text-body rounded">Section Iten 1.4</a></li>
-                                <li><a href="#section-1-5" class="text-body rounded">Section Iten 1.5</a></li>
+                                <li><a href="#section-1-5" class="text-body rounded">Section Iten 1.5</a></li> -->
                             </ul>
                         </div>
                     </li>
                     <li class="mb-1">
                         <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
                             data-bs-target="#collapse-2" aria-expanded="false">
-                            Section Iten 2
+                           TextField
                         </button>
                         <div class="collapse" id="collapse-2">
                             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                 <li><a href="#section-2-1" class="text-body rounded">Section Iten 2.1</a></li>
-                                <li><a href="#section-2-2" class="text-body rounded">Section Iten 2.2</a></li>
+                                <!-- <li><a href="#section-2-2" class="text-body rounded">Section Iten 2.2</a></li>
                                 <li><a href="#section-2-3" class="text-body rounded">Section Iten 2.3</a></li>
                                 <li><a href="#section-2-4" class="text-body rounded">Section Iten 2.4</a></li>
-                                <li><a href="#section-2-5" class="text-body rounded">Section Iten 2.5</a></li>
+                                <li><a href="#section-2-5" class="text-body rounded">Section Iten 2.5</a></li> -->
                             </ul>
                         </div>
                     </li>
                     <li class="mb-1">
                         <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
                             data-bs-target="#collapse-3" aria-expanded="false">
-                            Section Iten 3
+                           Modal
                         </button>
                         <div class="collapse" id="collapse-3">
                             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                 <li><a href="#section-3-1" class="text-body rounded">Section Iten 3.1</a></li>
-                                <li><a href="#section-3-2" class="text-body rounded">Section Iten 3.2</a></li>
+                                <!-- <li><a href="#section-3-2" class="text-body rounded">Section Iten 3.2</a></li>
                                 <li><a href="#section-3-3" class="text-body rounded">Section Iten 3.3</a></li>
                                 <li><a href="#section-3-4" class="text-body rounded">Section Iten 3.4</a></li>
-                                <li><a href="#section-3-5" class="text-body rounded">Section Iten 3.5</a></li>
+                                <li><a href="#section-3-5" class="text-body rounded">Section Iten 3.5</a></li> -->
 
                             </ul>
                         </div>
@@ -82,15 +111,15 @@
                     <li class="mb-1">
                         <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
                             data-bs-target="#collapse-4" aria-expanded="false">
-                            Section Iten 4
+                           Loader
                         </button>
                         <div class="collapse" id="collapse-4">
                             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                 <li><a href="#section-4-1" class="text-body rounded">Section Iten 4.1</a></li>
-                                <li><a href="#section-4-2" class="text-body rounded">Section Iten 4.2</a></li>
+                                <!-- <li><a href="#section-4-2" class="text-body rounded">Section Iten 4.2</a></li>
                                 <li><a href="#section-4-3" class="text-body rounded">Section Iten 4.3</a></li>
                                 <li><a href="#section-4-4" class="text-body rounded">Section Iten 4.4</a></li>
-                                <li><a href="#section-4-5" class="text-body rounded">Section Iten 4.5</a></li>
+                                <li><a href="#section-4-5" class="text-body rounded">Section Iten 4.5</a></li> -->
 
                             </ul>
                         </div>
@@ -98,15 +127,15 @@
                     <li class="mb-1">
                         <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
                             data-bs-target="#collapse-5" aria-expanded="false">
-                            Section Iten 5
+                            Shimmar Effect
                         </button>
                         <div class="collapse" id="collapse-5">
                             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                 <li><a href="#section-5-1" class="text-body rounded">Section Iten 5.1</a></li>
-                                <li><a href="#section-5-2" class="text-body rounded">Section Iten 5.2</a></li>
+                                <!-- <li><a href="#section-5-2" class="text-body rounded">Section Iten 5.2</a></li>
                                 <li><a href="#section-5-3" class="text-body rounded">Section Iten 5.3</a></li>
                                 <li><a href="#section-5-4" class="text-body rounded">Section Iten 5.4</a></li>
-                                <li><a href="#section-5-5" class="text-body rounded">Section Iten 5.5</a></li>
+                                <li><a href="#section-5-5" class="text-body rounded">Section Iten 5.5</a></li> -->
 
                             </ul>
                         </div>
@@ -136,66 +165,189 @@
         </div>
     </div>
     <!-- Hero End -->
+    <div class="container py-5">
+        <!-- <h1 class="fw-bold display-4">Install</h1> -->
+        <h2 id="kit-install" class="fw-bold mt-5 mb-5">Kitbase install</h2>
+        <!-- kit-install -->
 
+        <h3>Swift Package Manager</h3>
+
+        <p>You can also use Swift Package Manager to add KitBase as a dependency:</p>
+        
+        <ol>
+          <li>In Xcode, go to File &gt; Swift Packages &gt; Add Package Dependency.</li>
+          <li>Enter the repository URL: <code>https://github.com/sinbadbd/KitBase.git</code></li>
+          <li>Specify the version or branch you want to use.</li>
+        </ol>
+        
+        <h3>Manual Installation</h3>
+        
+        <p>If you prefer not to use any dependency manager, you can manually add the <code>KitBase</code> source files to your project:</p>
+        
+        <ol>
+          <li>Download the <a href="https://github.com/sinbadbd/KitBase/releases">latest release</a> or clone the repository.</li>
+          <li>Drag and drop the <code>KitBase</code> folder into your Xcode project.</li>
+        </ol>
+        
+        <h2>Usage</h2>
+        
+        <p>After installing KitBase, you can start using it in your SwiftUI project. Here's a quick example:</p>
+        
+        <pre>
+        <code>
+import SwiftUI
+import KitBase
+
+struct ContentView: View {
+    var body: some View {
+        Button("Custom Button") {
+            // Handle button tap
+        }
+        .buttonStyle(KitBaseButtonStyleBuilder()
+            .setBackgroundColor(.blue)
+            .setForegroundColor(.white)
+            .build()
+        )
+    }
+}
+        </code>
+    </pre>
+        
+        <!-- <p>For more detailed usage, check out the <a href="#link-to-documentation-if-available">documentation</a>.</p> -->
+        
+        <!-- <h2>License</h2> -->
+        
+        <!-- <p>KitBase is released under the <a href="LICENSE">MIT License</a>.</p> -->
+
+
+
+    </div>
     <!-- Section Start -->
     <div class="container py-5">
-        <h1 class="fw-bold display-4">Section Item 1</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui. Phasellus ultrices diam a mollis tincidunt. Sed vulputate leo at magna semper blandit. Sed ultricies aliquam neque, bibendum finibus ante finibus aliquam. Pellentesque et justo quis urna volutpat dignissim. Suspendisse ut neque odio ante ipsum primis in faucibus orci luctus.</p>
+       
+<h1>KitBaseButtonStyleBuilder Summary</h1>
 
-        <h2 id="section-1-1" class="fw-bold mt-5">Section Item 1.1</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui. Phasellus ultrices diam a mollis tincidunt. Sed vulputate leo at magna semper blandit. Sed ultricies aliquam neque, bibendum finibus ante finibus aliquam. Pellentesque et justo quis urna volutpat dignissim. Suspendisse ut neque odio ante ipsum primis in faucibus orci luctus.</p>
-        <h5 class="fw-bold">Colors</h5>
-        <p>File structure example. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui.</p>
-        <p class="text-primary">.text-primary</p>
-        <p class="text-secondary">.text-secondary</p>
-        <p class="text-success">.text-success</p>
-        <p class="text-danger">.text-danger</p>
-        <p class="text-warning bg-dark">.text-warning</p>
-        <p class="text-info bg-dark">.text-info</p>
-        <p class="text-light bg-dark">.text-light</p>
-        <p class="text-dark">.text-dark</p>
-        <p class="text-body">.text-body</p>
-        <p class="text-muted">.text-muted</p>
-        <p class="text-white bg-dark">.text-white</p>
-        <p class="text-black-50">.text-black-50</p>
-        <p class="text-white-50 bg-dark">.text-white-50</p>
+<p>The <code>KitBaseButtonStyleBuilder</code> struct is designed to build custom button styles with various configurable parameters. The <code>ContentBuilderView</code> SwiftUI view showcases how to use this builder to create a button with specific style configurations.</p>
 
-        <h2 id="section-1-2" class="fw-bold mt-5">Section Item 1.2</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui. Phasellus ultrices diam a mollis tincidunt. Sed vulputate leo at magna semper blandit. Sed ultricies aliquam neque, bibendum finibus ante finibus aliquam. Pellentesque et justo quis urna volutpat dignissim. Suspendisse ut neque odio ante ipsum primis in faucibus orci luctus.</p>
-        <h5 class="fw-bold">Background</h5>
-        <p>File structure example. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui.</p>
-        <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
-        <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
-        <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
-        <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
-        <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
-        <div class="p-3 mb-2 bg-info text-dark">.bg-info</div>
-        <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
-        <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
-        <div class="p-3 mb-2 bg-body text-dark">.bg-body</div>
-        <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
-        <div class="p-3 mb-2 bg-transparent text-dark">.bg-transparent</div>
+<p>Please note that the actual implementation details within the <code>build()</code> method and the usage in <code>ContentBuilderView</code> are not provided in this summary. If you need further details or have specific questions about any part of the code, feel free to ask!</p>
 
-        <h2 id="section-1-3" class="fw-bold mt-5">Section Item 1.3</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui. Phasellus ultrices diam a mollis tincidunt. Sed vulputate leo at magna semper blandit. Sed ultricies aliquam neque, bibendum finibus ante finibus aliquam. Pellentesque et justo quis urna volutpat dignissim. Suspendisse ut neque odio ante ipsum primis in faucibus orci luctus.</p>
-        <h5 class="fw-bold">File Structure</h5>
-        <p>File structure example. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui.</p>
         <pre>
-            <code>
-Product_folder/
-├── css/
-│   ├── all .css files
-├── img/
-|   ├── all .jpg, .png files
-├── js/
-│   ├── all .js files
-├── lib/
-│   ├── all library folder/
-├── scss/
-|   ├── all .scss files
-├── all .html files
+            <code> 
+struct ContentBuilderView: View {
+    var body: some View {
+        VStack(spacing: 16) {
+            Button("icon with button", action: {
+                print("")
+            })
+            .buttonStyle(
+                KitBaseButtonStyleBuilder()
+                    .setBackgroundColor(.gray)
+                    .setForegroundColor(.black)
+                    .setButtonWidth(200)
+                    .setButtonHeight(30)
+                    .setIcon("square.and.arrow.up")
+                    .setImage("ic_edit")
+                    .setIconColor(.red)
+                    .setIconColor(.red)
+                    .setIconWidth(20)
+                    .setIconHeight(20)
+                    .setShowShadow(false) // Default true
+                    //.setPaddingAll(paddingAll: 0)
+                    .setPaddingVertical(paddingVertical: 0)
+                    .setPaddingHorizontal(paddingHorizontal: 0)
+                    .build()
+            )
+        }
+    }
+}
             </code>
         </pre>
+        <h6>Parameter</h6>
+        <div class="table-responsive mb-4">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">Method</th>
+                        <th scope="col">Parameter</th>
+                        <th scope="col">Value (example)</th>
+                        <th scope="col">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="14">KitBaseButtonStyleBuilder</td>
+                        <td>setBackgroundColor</td>
+                        <td>.gray</td>
+                        <td>The background color of the button.</td>
+                    </tr>
+                    <tr>
+                        <td>setForegroundColor</td>
+                        <td>.black</td>
+                        <td>The text color of the button.</td>
+                    </tr>
+                    <tr>
+                        <td>setButtonWidth</td>
+                        <td>200</td>
+                        <td>The width of the button.</td>
+                    </tr>
+                    <tr>
+                        <td>setButtonHeight</td>
+                        <td>30</td>
+                        <td>The height of the button.</td>
+                    </tr>
+                    <tr>
+                        <td>setIcon</td>
+                        <td>"square.and.arrow.up"</td>
+                        <td>The system icon to be displayed on the button.</td>
+                    </tr>
+                    <tr>
+                        <td>setImage</td>
+                        <td>"ic_edit"</td>
+                        <td>The image name to be used on the button.</td>
+                    </tr>
+                    <tr>
+                        <td>setIconColor</td>
+                        <td>.red</td>
+                        <td>The color of the icon.</td>
+                    </tr>
+                    <tr>
+                        <td>setIconWidth</td>
+                        <td>20</td>
+                        <td>The width of the icon.</td>
+                    </tr>
+                    <tr>
+                        <td>setIconHeight</td>
+                        <td>20</td>
+                        <td>The height of the icon.</td>
+                    </tr>
+                    <tr>
+                        <td>setShowShadow</td>
+                        <td>false</td>
+                        <td>Whether to show a shadow around the button. Default is true.</td>
+                    </tr>
+                    <tr>
+                        <td>setPaddingVertical</td>
+                        <td>0</td>
+                        <td>The vertical padding of the button.</td>
+                    </tr>
+                    <tr>
+                        <td>setPaddingHorizontal</td>
+                        <td>0</td>
+                        <td>The horizontal padding of the button.</td>
+                    </tr>
+                    <tr>
+                        <td>setPaddingAll</td>
+                        <td>0</td>
+                        <td>The padding applied to all sides of the button.</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">build</td>
+                        <td colspan="3">Builds and returns a KitBaseButtonStyle instance with the configured parameters.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
 
         <h2 id="section-1-4" class="fw-bold">Section Item 1.4</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui. Phasellus ultrices diam a mollis tincidunt. Sed vulputate leo at magna semper blandit. Sed ultricies aliquam neque, bibendum finibus ante finibus aliquam. Pellentesque et justo quis urna volutpat dignissim. Suspendisse ut neque odio ante ipsum primis in faucibus orci luctus.</p>
@@ -468,21 +620,6 @@ $(document).ready(function(){
     <div class="container py-5">
         <h1 class="fw-bold display-4">Section Item 3</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui. Phasellus ultrices diam a mollis tincidunt. Sed vulputate leo at magna semper blandit. Sed ultricies aliquam neque, bibendum finibus ante finibus aliquam. Pellentesque et justo quis urna volutpat dignissim. Suspendisse ut neque odio ante ipsum primis in faucibus orci luctus.</p>
-
-        <h2 id="section-3-1" class="fw-bold mt-5">Section Item 3.1</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui. Phasellus ultrices diam a mollis tincidunt. Sed vulputate leo at magna semper blandit. Sed ultricies aliquam neque, bibendum finibus ante finibus aliquam. Pellentesque et justo quis urna volutpat dignissim. Suspendisse ut neque odio ante ipsum primis in faucibus orci luctus.</p>
-
-        <h2 id="section-3-2" class="fw-bold mt-5">Section Item 3.2</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui. Phasellus ultrices diam a mollis tincidunt. Sed vulputate leo at magna semper blandit. Sed ultricies aliquam neque, bibendum finibus ante finibus aliquam. Pellentesque et justo quis urna volutpat dignissim. Suspendisse ut neque odio ante ipsum primis in faucibus orci luctus.</p>
-
-        <h2 id="section-3-3" class="fw-bold mt-5">Section Item 3.3</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui. Phasellus ultrices diam a mollis tincidunt. Sed vulputate leo at magna semper blandit. Sed ultricies aliquam neque, bibendum finibus ante finibus aliquam. Pellentesque et justo quis urna volutpat dignissim. Suspendisse ut neque odio ante ipsum primis in faucibus orci luctus.</p>
-
-        <h2 id="section-3-4" class="fw-bold mt-5">Section Item 3.4</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui. Phasellus ultrices diam a mollis tincidunt. Sed vulputate leo at magna semper blandit. Sed ultricies aliquam neque, bibendum finibus ante finibus aliquam. Pellentesque et justo quis urna volutpat dignissim. Suspendisse ut neque odio ante ipsum primis in faucibus orci luctus.</p>
-
-        <h2 id="section-3-5" class="fw-bold mt-5">Section Item 3.5</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui. Phasellus ultrices diam a mollis tincidunt. Sed vulputate leo at magna semper blandit. Sed ultricies aliquam neque, bibendum finibus ante finibus aliquam. Pellentesque et justo quis urna volutpat dignissim. Suspendisse ut neque odio ante ipsum primis in faucibus orci luctus.</p>
     </div>
     <!-- Section End -->
 
@@ -491,20 +628,6 @@ $(document).ready(function(){
         <h1 class="fw-bold display-4">Section Item 4</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui. Phasellus ultrices diam a mollis tincidunt. Sed vulputate leo at magna semper blandit. Sed ultricies aliquam neque, bibendum finibus ante finibus aliquam. Pellentesque et justo quis urna volutpat dignissim. Suspendisse ut neque odio ante ipsum primis in faucibus orci luctus.</p>
 
-        <h2 id="section-4-1" class="fw-bold mt-5">Section Item 4.1</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui. Phasellus ultrices diam a mollis tincidunt. Sed vulputate leo at magna semper blandit. Sed ultricies aliquam neque, bibendum finibus ante finibus aliquam. Pellentesque et justo quis urna volutpat dignissim. Suspendisse ut neque odio ante ipsum primis in faucibus orci luctus.</p>
-
-        <h2 id="section-4-2" class="fw-bold mt-5">Section Item 4.2</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui. Phasellus ultrices diam a mollis tincidunt. Sed vulputate leo at magna semper blandit. Sed ultricies aliquam neque, bibendum finibus ante finibus aliquam. Pellentesque et justo quis urna volutpat dignissim. Suspendisse ut neque odio ante ipsum primis in faucibus orci luctus.</p>
-
-        <h2 id="section-4-3" class="fw-bold mt-5">Section Item 4.3</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui. Phasellus ultrices diam a mollis tincidunt. Sed vulputate leo at magna semper blandit. Sed ultricies aliquam neque, bibendum finibus ante finibus aliquam. Pellentesque et justo quis urna volutpat dignissim. Suspendisse ut neque odio ante ipsum primis in faucibus orci luctus.</p>
-
-        <h2 id="section-4-4" class="fw-bold mt-5">Section Item 4.4</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui. Phasellus ultrices diam a mollis tincidunt. Sed vulputate leo at magna semper blandit. Sed ultricies aliquam neque, bibendum finibus ante finibus aliquam. Pellentesque et justo quis urna volutpat dignissim. Suspendisse ut neque odio ante ipsum primis in faucibus orci luctus.</p>
-
-        <h2 id="section-4-5" class="fw-bold mt-5">Section Item 4.5</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui. Phasellus ultrices diam a mollis tincidunt. Sed vulputate leo at magna semper blandit. Sed ultricies aliquam neque, bibendum finibus ante finibus aliquam. Pellentesque et justo quis urna volutpat dignissim. Suspendisse ut neque odio ante ipsum primis in faucibus orci luctus.</p>
     </div>
     <!-- Section End -->
 
@@ -513,20 +636,6 @@ $(document).ready(function(){
         <h1 class="fw-bold display-4">Section Item 5</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui. Phasellus ultrices diam a mollis tincidunt. Sed vulputate leo at magna semper blandit. Sed ultricies aliquam neque, bibendum finibus ante finibus aliquam. Pellentesque et justo quis urna volutpat dignissim. Suspendisse ut neque odio ante ipsum primis in faucibus orci luctus.</p>
 
-        <h2 id="section-5-1" class="fw-bold mt-5">Section Item 5.1</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui. Phasellus ultrices diam a mollis tincidunt. Sed vulputate leo at magna semper blandit. Sed ultricies aliquam neque, bibendum finibus ante finibus aliquam. Pellentesque et justo quis urna volutpat dignissim. Suspendisse ut neque odio ante ipsum primis in faucibus orci luctus.</p>
-
-        <h2 id="section-5-2" class="fw-bold mt-5">Section Item 5.2</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui. Phasellus ultrices diam a mollis tincidunt. Sed vulputate leo at magna semper blandit. Sed ultricies aliquam neque, bibendum finibus ante finibus aliquam. Pellentesque et justo quis urna volutpat dignissim. Suspendisse ut neque odio ante ipsum primis in faucibus orci luctus.</p>
-
-        <h2 id="section-5-3" class="fw-bold mt-5">Section Item 5.3</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui. Phasellus ultrices diam a mollis tincidunt. Sed vulputate leo at magna semper blandit. Sed ultricies aliquam neque, bibendum finibus ante finibus aliquam. Pellentesque et justo quis urna volutpat dignissim. Suspendisse ut neque odio ante ipsum primis in faucibus orci luctus.</p>
-
-        <h2 id="section-5-4" class="fw-bold mt-5">Section Item 5.4</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui. Phasellus ultrices diam a mollis tincidunt. Sed vulputate leo at magna semper blandit. Sed ultricies aliquam neque, bibendum finibus ante finibus aliquam. Pellentesque et justo quis urna volutpat dignissim. Suspendisse ut neque odio ante ipsum primis in faucibus orci luctus.</p>
-
-        <h2 id="section-5-5" class="fw-bold mt-5">Section Item 5.5</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui. Phasellus ultrices diam a mollis tincidunt. Sed vulputate leo at magna semper blandit. Sed ultricies aliquam neque, bibendum finibus ante finibus aliquam. Pellentesque et justo quis urna volutpat dignissim. Suspendisse ut neque odio ante ipsum primis in faucibus orci luctus.</p>
     </div>
     <!-- Section End -->
 
